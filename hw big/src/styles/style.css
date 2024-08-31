@@ -366,6 +366,10 @@ header {
   font-size: 25px;
 }
 
+container {
+  max-width: 100%;
+}
+
 #services {
   background-color: #0E384C;
   padding: 30px;
@@ -1175,6 +1179,10 @@ header {
 .blogs__foot .foot_hover i:hover {
   background-color: #0E384C;
   rotate: 90deg;
+}
+
+section {
+  max-width: 100%;
 }
 
 .map p {

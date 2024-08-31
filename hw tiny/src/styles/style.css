@@ -383,7 +383,6 @@ header {
   font-size: 16px;
 }
 .right_side .images {
-  display: flex;
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px 0;
@@ -416,6 +415,11 @@ header {
 
 .left_side {
   position: sticky;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .right_side {

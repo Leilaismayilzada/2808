@@ -148,6 +148,7 @@
         }
 
         .right_side__icons {
+          
             .icons_1 {
                 position: absolute;
                 right: 0%;
@@ -189,6 +190,7 @@
                 justify-content: center;
                 box-shadow: 0px 0px 20px 0px #0E384C1A;
             }
+            
         }
     }
 }
@@ -221,4 +223,7 @@
         font-size: 25px;
 
     }
+}
+container{
+    max-width: 100%;
 }

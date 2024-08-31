@@ -197,7 +197,7 @@
        }
   }
   .images{
-    display: flex;
+
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px 0;
@@ -244,11 +244,17 @@
 
 .left_side {
     position: sticky;
+    position: sticky;
+    position: -webkit-sticky;
+    top:20px;
+    padding-left:15px ;
+    padding-right: 15px;
+    max-width: calc(100%-20px);
    
 }
 .right_side{
     overflow: auto;
     width: calc(100% - 0px); 
-    height: 100vh;
+    height: 100px;
     overflow: auto; 
 }
