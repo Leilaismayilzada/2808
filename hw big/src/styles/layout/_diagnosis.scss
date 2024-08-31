@@ -1,0 +1,70 @@
+#diagnosiss{
+    background-color: $blue__color;
+    background-image: url(https://demo.awaikenthemes.com/html-preview/dentaire/images/why-choose-us-bg.svg);
+  background-position: bottom;
+  padding: 30px;
+}
+
+
+.diagnosis{
+    text-align: center;
+    line-height: 50px;
+    span{
+        color: $hover_color;
+        font-weight: 500;
+    }
+    h1{
+        display: flex;
+       flex-direction: row;
+       justify-content: center;
+       font-weight: 700;
+       color: $hover_color;
+       p{
+        margin-left: 10px;
+        color: $button__color;
+        
+       }
+
+    }
+    h6{
+        color: $button__color;
+    }
+}
+.cards{
+    display: flex;
+margin-top: 20px;
+max-width: 100%;
+    .cards_txt{ 
+       h1{
+        font-size: 25px;
+        font-weight: 700;
+        text-align: end;
+       }
+       p{
+color: rgb(31, 100, 140);
+text-align: end;
+       }
+    }
+    .cards_img{
+      display: flex;
+width: 100% ;
+height: 60px;
+padding-left: 10px;
+
+img{
+    margin-top: 20px;
+  
+}
+    
+    
+ 
+    }
+}
+.dis{
+    display: flex;
+    width: 100%;
+   padding: 20px;
+    img{
+width: 100%;
+    }
+}

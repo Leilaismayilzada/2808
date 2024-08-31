@@ -1,0 +1,31 @@
+.teeth{
+    text-align: center;
+    padding: 50px 0;
+    .teeth_txt{
+        h1{
+            color: $button__color;
+            font-weight: 650;
+            font-size: 50px;
+            span{
+                color: $hover_color;
+            }
+        }
+    }
+    .teeth_txt_alt{
+        padding: 20px 0;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            li{
+                font-weight: 500;
+                color: $button__color;
+             
+            }
+            .line{
+                color: $hover_color;
+            }
+        }
+    }
+}

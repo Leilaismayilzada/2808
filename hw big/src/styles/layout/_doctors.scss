@@ -1,0 +1,95 @@
+#doctors{
+    background-color: $blue__color;
+    background-image: url(https://demo.awaikenthemes.com/html-preview/dentaire/images/our-team-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+}
+.doctor{
+    text-align: center;
+    .doctor_head{
+        padding: 40px 0;
+        h3{
+            font-size: 13px;
+            font-weight: 600;
+            color: $hover_color;
+            letter-spacing: 1px;
+        }
+        h1{
+            color: $hover_color;
+            font-weight: 700;
+            font-size: 40px;
+            span{
+                color: $button__color;
+            }
+        }
+        p{
+            font-size: 17px;
+            color: $button__color;
+        }
+    }
+}
+.doctor_img{
+   
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    
+    img{
+        width: 100%;
+        height: 100%;
+       transition: 0.6s ease-in-out;
+       &:hover{
+        transform: scale(1.1);
+       }
+   
+    }
+    .doctor_submenu{
+        position: absolute;
+        bottom: 20px;
+        
+        ul{
+            display: flex;
+            gap: 20px;
+            opacity: 0;
+            transform-origin: bottom;
+            transform: translateY(101%);
+            transition: 0.6s ease-in-out;
+            &:hover{
+                opacity: 1;
+                transform: translate(0%,0%);
+
+            }
+            li{
+                background-color: $button__color;
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
+                transition: 0.6s ease-in-out;
+                &:hover{
+                    background-color: $hover_color;
+                }
+                i{
+                    font-size: 19px;
+                }
+
+            }
+           
+        }
+       
+
+    }
+ 
+}
+.doctor_txt{
+    padding: 10px;
+    text-align: center;
+    h2{
+        color: $button__color;
+        font-size: 23px;
+        font-weight: 600;
+    }
+    p{
+        color: $button__color;
+    }
+  }

@@ -1,0 +1,110 @@
+#services {
+    background-color: $button__color;
+    padding: 30px;
+
+    .service {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        @include Flexible(center, center, row, wrap, 20px);
+
+        &__txt {
+            color: $white__color;
+
+            h1 {
+                font-size: 25px;
+            }
+
+            h2 {
+                font-weight: 400;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .hours {
+        margin-top: 20px;
+        display: flex;
+        border-left: 1px solid rgb(59, 98, 119);
+
+        @include Flexible(center, center, row, wrap, 20px);
+
+        &__txt {
+            color: $white__color;
+
+            h1 {
+                font-size: 25px;
+            }
+
+            h2 {
+                font-weight: 400;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .foot-btn {
+        margin: 20px 0 0 60px;
+        display: flex;
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 10px;
+            border-radius: 27px;
+            cursor: pointer;
+            border: none;
+            background-color: $hover_color;
+            color: $white__color;
+            font-weight: 600;
+            gap: 10px;
+            position: relative;
+
+            p {
+                margin-top: 10px;
+                font-size: 12px;
+            z-index: 1;
+        
+
+            }
+
+            .icon {
+                background-color: $white__color;
+                color: $hover_color;
+                padding: 2px;
+                border-radius: 50%;
+                width: 30px;
+                rotate: 30deg;
+                font-weight: 100;
+                z-index: 1;
+                transition: 0.7s ease-in-out;
+            }
+
+    &::after{
+        position: absolute;
+        content: '';
+        background-color: white;
+        color: black;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+    
+        
+    }
+    &:hover::after{
+        transform: scaleX(1);
+    }
+
+          
+
+
+        }
+    }
+}

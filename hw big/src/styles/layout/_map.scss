@@ -1,0 +1,103 @@
+.map {
+    p {
+        margin-top: 60px;
+
+        iframe {
+width: 100%;
+            height: 600px;
+            border-radius: 30px;
+            transition: 0.1s ease-in-out;
+        }
+    }
+}
+
+.cons {
+    margin-top: 100px;
+    .cons_head {
+        line-height: 30px;
+        h6{
+            color: $hover_color;
+            letter-spacing: 2px;
+        }
+        h1{
+            font-weight: 900;
+            color: $hover_color;
+            span{
+                color: $button__color;
+            }
+        }
+    }
+
+    .cons_icon {
+        margin-left: -30px;
+        ul{
+            li{
+                margin-top: 30px;
+                color: $button__color;
+                img{
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .cons_button {
+        margin-top: 50px;
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            text-align: center;
+            overflow: hidden;
+            border-radius: 27px;
+            cursor: pointer;
+            border: none;
+            overflow: hidden;
+            background-color: $hover_color;
+            color: $white__color;
+            font-weight: 600;
+            padding: 0px 10px;
+            width: 250px;
+            gap: 10px;
+            transition: 0.5s ease-in-out;
+            position: relative;
+
+            p {
+                z-index: 1;
+            }
+
+            .icon {
+                margin-top: 10px;
+                background-color: white;
+                color: $hover_color ;
+                padding: 4px 9px;
+                border-radius: 50px;
+                z-index: 1;
+                    rotate: -30deg;
+                transition: 0.3s ease-in-out;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-color: #0E384C;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.4s ease;   
+                left: 0;
+                top: 0;
+
+            }
+            &:hover::after{
+             transform: scaleX(1);
+        }
+          &:hover .icon{
+                transform: rotate(30deg);
+            }
+        }
+        
+        }
+
+    }
